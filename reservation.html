@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Reservation — GreenBite Café & Restaurant</title>
+<meta name="description" content="Reserve a table at GreenBite — quiet, seasonal dining in the neighborhood." />
+<link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+<header class="site-header">
+  <nav class="nav">
+    <a href="/home.html" class="brand">GreenBite</a>
+    <ul class="nav-links">
+      <li><a href="/home.html">Home</a></li>
+      <li><a href="/menu.html">Menu</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/reservation.html" class="active">Reservation</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <h1 class="section-title">Reserve a Table</h1>
+  <p class="section-subtitle">We'll confirm your booking by email within a few hours.</p>
+
+  <form>
+    <div class="row-2">
+      <div class="field">
+        <label for="fname">First Name</label>
+        <input id="fname" type="text" required />
+      </div>
+      <div class="field">
+        <label for="lname">Last Name</label>
+        <input id="lname" type="text" required />
+      </div>
+    </div>
+
+    <div class="row-2">
+      <div class="field">
+        <label for="email">Email</label>
+        <input id="email" type="email" required />
+      </div>
+      <div class="field">
+        <label for="phone">Phone</label>
+        <input id="phone" type="tel" />
+      </div>
+    </div>
+
+    <div class="row-2">
+      <div class="field">
+        <label for="date">Date</label>
+        <input id="date" type="date" required />
+      </div>
+      <div class="field">
+        <label for="time">Time</label>
+        <input id="time" type="time" required />
+      </div>
+    </div>
+
+    <div class="field">
+      <label for="guests">Guests</label>
+      <select id="guests">
+        <option>1</option><option>2</option><option>3</option><option>4</option>
+        <option>5</option><option>6</option><option>7+</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label for="notes">Special Requests</label>
+      <textarea id="notes" placeholder="Allergies, occasion, seating preference..."></textarea>
+    </div>
+
+    <button class="btn" type="submit">Request Reservation</button>
+  </form>
+</main>
+
+<footer>
+  <p>© GreenBite Café & Restaurant · i8 Markaz Islamabad · Open daily 8am–10pm</p>
+</footer>
+</body>
+</html>
